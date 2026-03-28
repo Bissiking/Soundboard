@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm audit:*)",
+      "Bash(find d:/DEV/NODEJS/Soundboard/src d:/DEV/NODEJS/Soundboard/app.js d:/DEV/NODEJS/Soundboard/package.json d:/DEV/NODEJS/Soundboard/.env.example -not -path */node_modules/*)",
+      "Bash(node --check src/bot/controller.js)",
+      "Bash(node --check src/api/routes/bot.js)",
+      "Bash(node --check src/api/routes/soundboard.js)",
+      "Bash(node --check src/api/server.js)",
+      "Bash(node --check src/bot/index.js)",
+      "Bash(node -e \"const { DatabaseSync } = require\\(''node:sqlite''\\); const db = new DatabaseSync\\('':memory:''\\); db.exec\\(''CREATE TABLE t \\(id TEXT\\)''\\); console.log\\(''node:sqlite OK''\\)\")",
+      "Bash(node --no-experimental-warnings --check src/db/index.js)",
+      "Bash(node --no-experimental-warnings --check src/services/soundService.js)",
+      "Bash(node --check src/db/index.js)",
+      "Bash(node --check src/services/soundService.js)",
+      "Bash(node --help)",
+      "Bash(node -e \":*)",
+      "Bash(grep -v \"Use \\\\`node\")"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "luma-soundboard",
+  "version": "2.0.0",
+  "description": "Discord Soundboard connecté à l'API LUMA",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "register-commands": "node src/bot/register.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.18.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "fluent-ffmpeg": "^2.1.3",
+    "multer": "^1.4.5-lts.1",
+    "opusscript": "^0.0.8",
+    "tweetnacl": "^1.0.3",
+    "uuid": "^9.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
